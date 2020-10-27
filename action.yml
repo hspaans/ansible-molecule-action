@@ -2,9 +2,17 @@
 name: 'Ansible Molecule testing'
 description: 'Github Action to run Molecule.'
 
+inputs:
+  command:
+    description: 'Molecule command to be used'
+    required: true
+    default: test
+
 runs:
   using: 'docker'
   image: 'docker://ghcr.io/hspaans/ansible-molecule-action:latest'
+  env:
+    ACTION_COMMAND: ${{ inputs.command }}
 
 branding:
   icon: 'book'  
