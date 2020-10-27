@@ -1,5 +1,5 @@
 ---
-name: 'Ansible Molecule'
+name: 'Ansible Molecule testing'
 description: 'Github Action to run Molecule.'
 
 runs:
