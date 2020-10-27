@@ -1,0 +1,11 @@
+---
+name: 'Ansible Molecule'
+description: 'Github Action to run Molecule.'
+
+runs:
+  using: 'docker'
+  image: 'docker://ghcr.io/hspaans/ansible-molecule-action:latest'
+
+branding:
+  icon: 'book'  
+  color: 'gray-dark'

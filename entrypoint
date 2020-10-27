@@ -1,0 +1,8 @@
+
+#!/bin/bash
+set -e
+
+command_string="molecule"
+
+echo "Command: $command_string"
+eval "$command_string"

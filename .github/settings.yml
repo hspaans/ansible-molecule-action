@@ -1,0 +1,7 @@
+---
+repository:
+  description: GitHub Action to run Molecule
+  topics: github-action, ansible, ansible-galaxy, ansible-role, molecule
+  delete_branch_on_merge: true
+  has_wiki: false
+  private: false
