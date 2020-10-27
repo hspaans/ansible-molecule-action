@@ -1,8 +1,12 @@
-
 #!/bin/bash
 set -e
 
 command_string="molecule"
+
+if [ -n "$ACTION_COMMAND" ]
+then
+	command_string="$command_string $ACTION_COMMAND"
+fi
 
 echo "Command: $command_string"
 eval "$command_string"
