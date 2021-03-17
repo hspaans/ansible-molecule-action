@@ -7,9 +7,9 @@ LABEL repository="https://github.com/hspaans/ansible-molecule-action"
 LABEL homepage="https://github.com/hspaans/ansible-molecule-action"
 LABEL maintainer="Hans Spaans <hans@dailystuff.nl>"
 
-COPY requirements.txt .
+COPY requirements.txt /usr/local/etc/
 
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r /usr/local/etc/requirements.txt
 
 COPY entrypoint /usr/local/bin/entrypoint
 RUN chmod 555 /usr/local/bin/entrypoint
