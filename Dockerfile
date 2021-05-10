@@ -1,4 +1,4 @@
-FROM python:3.9.4-slim
+FROM python:3.9.5-slim
 
 LABEL org.opencontainers.image.description="Molecule container for GitHub Action ansible-molecule"
 LABEL org.opencontainers.image.source=https://github.com/hspaans/ansible-molecule-action
